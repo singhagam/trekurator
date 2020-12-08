@@ -1,7 +1,5 @@
 package com.trekurator.model;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,13 +10,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import lombok.Data;
-
-
 @Entity
 @Table(name="booking_transaction_details")
-@Access(value=AccessType.FIELD)
-@Data
 public class BookingTransactionDetails
 {
 	@Id
